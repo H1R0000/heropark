@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   
+    <title>District Wheels</title>
+    <link rel="shortcut icon" href="css/images/District.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="shop.html">SHOP</a>
+        <a href="collection.html">COLLECTION</a>
+      </nav>
+      <div class="logo">
+        <img
+          alt="District Wheels Logo"
+          src="css/images/HEADER.png"
+        />
+      </div>
+      <div class="icons">
+        <i class="fas fa-search" onclick="toggleSearchDrawer()"></i>
+        <a href="user.html"><i class="fas fa-user"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </header>
+
+    <div class="carousel">
+      <img
+        alt="Slide 1"
+        class="active"
+        src="css/images/image1.jpg"
+      />
+      <img
+        alt="Slide 2"
+        src="css/images/image2.jpg"
+      />
+      <img
+        alt="Slide 3"
+        src="css/images/image3.jpg"
+      />
+      <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <section class="featured-products">
+      <h2>FEATURED PRODUCTS</h2>
+      <div class="products">
+        <div class="product">
+            <a href="link-to-featured1.html">
+                <img
+                    alt="Tarmac works RWB 993 Motul With Oil Tin Can"
+                    src="css/images/featured1.jpg"
+                />
+                <div class="title">Tarmac works RWB 993 Motul With Oil Tin Can</div>
+            </a>
+            <div class="price">₱3,500.00</div>
+        </div>
+        <div class="product">
+            <a href="link-to-featured2.html">
+                <img
+                    alt="Tarmac works RWB 993 Kamikaze Japan With Oil Tin Can"
+                    src="css/images/featured2.jpg"
+                />
+                <div class="title">Tarmac works RWB 993 Kamikaze Japan With Oil Tin Can</div>
+            </a>
+            <div class="price">₱3,500.00</div>
+        </div>
+        <div class="product">
+            <a href="link-to-featured3.html">
+                <img
+                    alt="Tarmac works RWB 993 Morelow With Oil Tin Can"
+                    src="css/images/featured3.jpg"
+                />
+                <div class="title">Tarmac works RWB 993 Morelow With Oil Tin Can</div>
+            </a>
+            <div class="price">₱3,500.00</div>
+        </div>
+    </div>
+    
+    </section>
+
+    <section class="about-us">
+      <div>
+        <img
+            class="clickable-image"
+            alt="Hot Wheels Collection"
+            src="css/images/about1.jpg"
+        />
+        <img
+            class="clickable-image"
+            alt="Car Racing Scene"
+            src="css/images/about2.jpg"
+        />
+        <img
+            class="clickable-image"
+            alt="Die-cast Car Display"
+            src="css/images/about3.jpg"
+        />
+    </div>
+    
+    <!-- Modal Structure -->
+    <div class="modal" id="imageModal" style="display:none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" />
+    </div>
+    
+      <h2>ABOUT US</h2>
+      <p>
+        In 2023, District Wheels began by offering just Hot Wheels. Fast forward
+        a year, and we're now your go-to destination for a wide range of 1/64
+        die-cast car brands. Whether you're a collector or just love cool car
+        toys, we're your ultimate pit stop!
+      </p>
+    </section>
+
+    <footer>
+        <div class="Footer">
+            <h2>Get Connected</h2>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@districtwheels" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/DistrictWheels/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_districtwheels/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:hdpark@student.hau.edu.ph" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>© 2024, District Wheels</p>
+        </div>
+    </footer>
+
+    <div class="search-drawer" id="searchDrawer">
+      <div class="search-bar">
+        <input placeholder="Search..." type="text" />
+        <button class="close-btn" onclick="toggleSearchDrawer()">&times;</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

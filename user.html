@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District Wheels Login</title>
+    <link rel="shortcut icon" href="css/images/District.ico">
+    <link rel="stylesheet" href="css/loginstyles.css">
+</head>
+<body>
+    <div class="login-container">
+        <img alt="District Wheels Logo" height="50" src="css/images/header2.png" width="150"/>
+        
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('login')">
+                Log in
+            </div>
+            <div class="tab" onclick="showTab('signup')">
+                Sign in
+            </div>
+        </div>
+
+        <form id="login-form">
+            <input placeholder="Email" type="email" />
+            <input placeholder="Password" type="password" />
+            <a href="#">Reset Password</a>
+            <button type="submit">LOG IN</button>
+        </form>
+
+        <form id="signup-form" style="display: none;">
+            <input placeholder="Email" type="email" />
+            <input placeholder="Password" type="password" />
+            <input placeholder="Confirm Password" type="password" />
+            <button type="submit">SIGN UP</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
